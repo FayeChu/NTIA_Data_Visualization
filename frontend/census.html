@@ -1,0 +1,130 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NTIA Boardband</title>
+    <!-- Google font-->
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic|Carrois+Gothic+SC' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">  
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>        
+    <div class="header clearfix">
+        <div class="logo">
+            <a href="https://ischool.uw.edu/" target="_blank">
+                <img src="iSchool-logo.png" alt="Home">
+            </a>
+        </div>
+        <div class="title">
+            <h1>Broadband Data for Communities and States</h1>
+        </div>       
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="index.html">Home</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="county.html">County-Level</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="census.html">Census</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="infographic.html">State Infographics<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="other.html">Other Team</a>
+              </li>
+              <li class="nav-item my-2 my-lg-0">
+                <a class="nav-link" href="documentation.html">Documentation</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    </div>
+
+    <div class="vis-container">
+        <div class="provider-container clearfix">
+            <h3>Census Data Visualization</h3>
+                <div class="tab-pane" id="census">
+                    <div class='tableauPlaceholder' id='viz1525836279732' style='position: relative'>
+                        <noscript>
+                            <a href='#'>
+                                <img alt='Census Dashboard ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;FC&#47;FCCDataViz-Census&#47;CensusDashboard&#47;1_rss.png' style='border: none' />
+                            </a>
+                        </noscript>
+                        <object class='tableauViz'  style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                            <param name='embed_code_version' value='3' /> 
+                            <param name='site_root' value='' />
+                            <param name='name' value='FCCDataViz-Census&#47;CensusDashboard' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;FC&#47;FCCDataViz-Census&#47;CensusDashboard&#47;1.png' /> 
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='filter' value='publish=yes' />
+                        </object>
+                    </div>                
+                    <script type='text/javascript'>                    
+                        var divElement = document.getElementById('viz1525836279732');             
+                        var vizElement = divElement.getElementsByTagName('object')[0];             
+                        vizElement.style.width='1200px';vizElement.style.height='827px';           
+                        var scriptElement = document.createElement('script');
+                        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                        vizElement.parentNode.insertBefore(scriptElement, vizElement);           
+                    </script>
+                </div>
+                <div class="reference">
+                            <a href="https://public.tableau.com/profile/ding.luo#!/vizhome/FCCDataViz-Census/CensusDashboard?publish=yes" target="_blank">
+                                <strong>Tableau Source</strong>
+                            </a>
+                        </div>
+
+            <div class="footer">
+                <strong>Contacts</strong>
+                <p>University of Washington Capstone Team</p>
+                <p>msimcapstone18@gmail.com</p>
+                <a href="https://www.ntia.doc.gov/">National Telecommunications and Information Administration</a>
+                <p>1401 Constitution Ave., NW Washington, DC 20230</p>
+            </div>
+        </div>
+    </div>
+
+    
+    
+    <!-- d3 -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.12.0/d3.min.js"></script>
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+    <!-- (Optional) Latest compiled and minified JavaScript translation files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/i18n/defaults-*.min.js"></script>
+    <!-- bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src="https://d3js.org/topojson.v2.min.js"></script>
+    <script src="app.js"></script>
+    <script src="test.js"></script>
+    <script src="index.js"></script>
+
+
+</body>
+
+</html>

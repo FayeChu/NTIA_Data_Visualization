@@ -1,0 +1,193 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>State Infographics</title>
+    <!-- Google font-->
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic|Carrois+Gothic+SC' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">  
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./css/state-info.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+<body>
+    <div class="header clearfix">
+       <div class="logo">
+            <a href="https://ischool.uw.edu/">
+                <img src="iSchool-logo.png" alt="Home">
+            </a>
+        </div>
+        <div class="title">
+            <h1>Broadband Data for Communities and States</h1>
+        </div>
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="index.html">Home</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="county.html">County-Level</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="census.html">Census</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">State Infographics<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="other.html">Other Team</a>
+              </li>
+              <li class="nav-item my-2 my-lg-0">
+                <a class="nav-link" href="documentation.html">Documentation</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    </div>
+    <div class="vis-container">
+        <div class="provider-container clearfix">
+            <h2>Infographics</h2>
+            <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">State-Level Infographic</a>
+
+        <div>
+            <select name="stateList" id="sl" class="form-control"></select>
+        </div>
+        <div>
+            <button class="btn btn-outline-success my-2" id="search">Update</button>
+        </div>
+    </nav>
+    <div class="background">
+        <div class="info_head">
+            <div class="head-filter"></div>
+            <div class="head-content">Washington</div>
+        </div>
+        <div class="summary">
+            <div class="summary-block">
+                <div class="icon">
+                    <div class="image blocks"></div>
+                </div>
+                <div class="icon1">
+                    <div class="info_title">#Counties/#Blocks</div>
+                    <div class="number cbnum"></div>
+                </div>
+            </div>
+            <div class="summary-block">
+                <div class="icon">
+                    <div class="image edu"></div>
+                </div>
+                <div class="icon1">
+                    <div class="info_title">Education
+                        <span><p>Bachelors,25+</p></span>
+                    </div>
+                    <div class="number edunum"></div>
+                </div>
+            </div>
+            <div class="summary-block">
+                <div class="icon">
+                    <div class="image income"></div>
+                </div>
+                <div class="icon1">
+                    <div class="info_title">Median Income</div>
+                    <div class="number incomenum"></div>
+                </div>
+            </div>
+            <div class="summary-block">
+                <div class="icon">
+                    <div class="image poverty"></div>
+                </div>
+                <div class="icon1">
+                    <div class="info_title">Poverty Rate</div>
+                    <div class="number povertynum"></div>
+                </div>
+            </div>
+            <div class="summary-block">
+                <div class="icon">
+                    <div class="image population"></div>
+                </div>
+                <div class="icon1">
+                    <div class="info_title">Population</div>
+                    <div class="number popnum"></div>
+                </div>
+            </div>
+            <div class="summary-block">
+                <div class="icon">
+                    <div class="image pd"></div>
+                </div>
+                <div class="icon1">
+                    <div class="info_title">Population Density</div>
+                    <div class="number pdnum"></div>
+                </div>
+            </div>
+        </div>
+        <div class="headbar" id="toolbar">
+            <h5>  Number of Providers by Service Type</h5>
+        </div>
+        <div class="bubbles">
+        </div>
+        <div class="connectivity" id="twentyfiveAccess"></div>
+        <div class="connectivity" id="hundredAccess"></div>
+        <div class="connectivity" id="twentyfiveWealth"></div>
+        <div class="connectivity" id="hundredWealth"></div>
+        <div class="subscriptionlevel" id="count_200kbps"></div>
+        <div class="subscriptionlevel" id="count_1mbps"></div>
+        <div class="foot">
+            <div class="foot-filter">
+            </div>
+            <div class="foot-content">UW MSIM Capstone</div>
+        </div>
+    </div>
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <strong>Contacts</strong>
+        <p>University of Washington Capstone Team</p>
+        <p>msimcapstone18@gmail.com</p>
+        <a href="https://www.ntia.doc.gov/">National Telecommunications and Information Administration</a>
+        <p>1401 Constitution Ave., NW Washington, DC 20230</p>
+    </div>
+
+    <!-- d3 -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.12.0/d3.min.js"></script>
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+    <!-- (Optional) Latest compiled and minified JavaScript translation files -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/i18n/defaults-*.min.js"></script> -->
+    <!-- bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src="https://d3js.org/topojson.v2.min.js"></script>
+    <script src="app.js"></script>
+    <script src="./js/state-info.js"></script>
+    <script src="./js/bubble1.js"></script>
+    <script src="./js/bar.js"></script>
+    <script src="./js/barConnectivity.js"></script>
+    <!-- <script src="./js/bar.js"></script> -->
+
+</body>
+
+</html>
