@@ -33,21 +33,27 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="county.html">County-Level</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="census.html">Census</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="infographic.html">State Infographics<span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="other.html">Connectivity Accessment Tool</a>
-              </li>
-              <li class="nav-item my-2 my-lg-0">
-                <a class="nav-link" href="documentation.html">Documentation</a>
-              </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="state.html">State-Level Visualization</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="county.html">County-Level Visualization</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="census.html">Census Visualization</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="infographic.html">State Infographics<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="other.html">Connectivity Accessment</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="source.html">Data Source</a>
+                </li>
+                <li class="nav-item my-2 my-lg-0">
+                    <a class="nav-link" href="documentation.html">Documentation</a>
+                </li>
             </ul>
           </div>
         </nav>
@@ -55,41 +61,29 @@
     
     <div class="vis-container">
         <div class="provider-container clearfix">
-            <h3>State-Level Visualization</h3>
-                    <div class='tableauPlaceholder_State' id='viz1525462035709' style='position: relative'>
-                        <noscript>
-                            <a href='#'>
-                                <img alt='Main Dashboard - State ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;9N&#47;9N8NQHPW5&#47;1_rss.png' style='border: none' />
-                            </a>
-                        </noscript>
-                        <object class='tableauViz'  style='display:none;'>
-                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-                            <param name='embed_code_version' value='3' /> 
-                            <param name='path' value='shared&#47;9N8NQHPW5' /> 
-                            <param name='toolbar' value='yes' />
-                            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;9N&#47;9N8NQHPW5&#47;1.png' /> 
-                            <param name='animate_transition' value='yes' />
-                            <param name='display_static_image' value='yes' />
-                            <param name='display_spinner' value='yes' />
-                            <param name='display_overlay' value='yes' />
-                            <param name='display_count' value='yes' />
-                            <param name='filter' value='publish=yes' />
-                        </object>
-                        <div class="reference">
-                            <a href="https://public.tableau.com/profile/ding.luo#!/vizhome/FCCDataViz-StateLevel/MainDashboard-State?publish=yes" target="_blank">
-                                <strong>Tableau Source</strong>
-                            </a>
-                        </div>
-                    </div>                
-                    <script type='text/javascript'>                    
-                        var divElement = document.getElementById('viz1525462035709');           
-                        var vizElement = divElement.getElementsByTagName('object')[0];            
-                        vizElement.style.width='1200px';vizElement.style.height='827px';         
-                        var scriptElement = document.createElement('script');                   
-                        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-                        vizElement.parentNode.insertBefore(scriptElement, vizElement);           
-                    </script>
-            <div class="footer">
+            <h3>MSIM CAPSTONE PROJECTS</h3>
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="broadband-data-tab" data-toggle="tab" href="#broadband-data" role="tab" aria-controls="broadband-data" aria-selected="true">Broadband Data for Communities and States</a>
+                    <a class="nav-item nav-link" id="digital-nation-tab" data-toggle="tab" href="#digital-nation" role="tab" aria-controls="digital-nation" aria-selected="false">Digital Nation</a>
+                    <a class="nav-item nav-link" id="connectivity-assessment-tab" data-toggle="tab" href="#connectivity-assessment" role="tab" aria-controls="connectivity-assessment" aria-selected="false">Connectivity Assessment</a>
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="broadband-data" role="tabpanel" aria-labelledby="broadband-data">
+                    <iframe width="600" height="360" src="https://www.youtube.com/embed/XOswcO-5FVQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                <div class="tab-pane fade" id="digital-nation" role="tabpanel" aria-labelledby="digital-nation">
+                    Digital Nation Video
+                </div>
+                <div class="tab-pane fade" id="connectivity-assessment" role="tabpanel" aria-labelledby="connectivity-assessment">
+                    Connectivity Assessment Video
+                </div>
+            </div>
+
+
+
+            <div class="footer" style="position: fixed;">
                 <strong>Contacts</strong>
                 <p>University of Washington Capstone Team</p>
                 <p>msimcapstone18@gmail.com</p>
@@ -112,7 +106,7 @@
     <!-- (Optional) Latest compiled and minified JavaScript translation files -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/i18n/defaults-*.min.js"></script>
     <!-- bootstrap -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
     <script src="https://d3js.org/topojson.v2.min.js"></script>
     <script src="app.js"></script>

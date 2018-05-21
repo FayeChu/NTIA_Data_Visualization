@@ -110,6 +110,11 @@ img {
     /*background-color: yellow;*/
 }
 
+.nav a {
+    color: rgba(0,0,0,.5);
+
+}
+
 /*.tableauPlaceholder_County {
     display: none;
 }*/
