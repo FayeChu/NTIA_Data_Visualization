@@ -115,6 +115,10 @@ img {
 
 }
 
+.tab-content {
+    margin-bottom: 100px;
+}
+
 /*.tableauPlaceholder_County {
     display: none;
 }*/
