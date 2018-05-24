@@ -26,6 +26,11 @@ iframe {
     margin-bottom: 10px;
 }
 
+h3 {
+
+    margin-top: 5px;
+}
+
 h4 {
     margin-bottom: 0;
 }
@@ -165,6 +170,36 @@ h4 {
 
 .deliverable a {
     font-size: 20px;
+    color: rgba(0,0,0,.5);
+}
+
+.card-header button {
+    padding: 0px;
+    font-size: 20px;
+    color: rgba(0,0,0,.5);
+
+}
+
+.card-header {
+    padding: 5px;
+    height: 50px;
+    text-align: center;
+}
+
+.card {
+    margin-bottom: 10px;
+}
+
+.accordion {
+    margin-bottom: 20px;
+}
+
+.card-body {
+    font-size: 16px;
+}
+
+.card-body a {
+    font-size: 18px;
     color: rgba(0,0,0,.5);
 }
 

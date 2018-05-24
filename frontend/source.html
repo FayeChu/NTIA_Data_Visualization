@@ -22,7 +22,7 @@
             </a>
         </div>
         <div class="title">
-            <h1>Broadband Data for Communities and States</h1>
+            <h1>Data Sources</h1>
         </div>
         
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -49,7 +49,7 @@
                   <a class="nav-link" href="digital.html">Digital Nation</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="other.html">Connectivity Accessment</a>
+                    <a class="nav-link" href="other.html">Connectivity Assessment</a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="source.html">Data Source</a>
@@ -57,86 +57,70 @@
                 <li class="nav-item my-2 my-lg-0">
                     <a class="nav-link" href="documentation.html">Documentation</a>
                 </li>
-              <!-- <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Dropdown
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </li> -->
-              <!-- <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-              </li> -->
+              
             </ul>
-            <!-- <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form> -->
+            
           </div>
         </nav>
     </div>
     <div class="vis-container">
         <div class="provider-container clearfix">
             <h2>Data Sources</h2>
-        </div>
-        <!-- <div class="container">
-            <h2>Provider Map</h2>
-            <ul class="nav nav-tabs">
-                <li class="active">
-                    <a  href="#residential-map" data-toggle="tab">Residential</a>
-                </li>
-                <li>
-                    <a href="#business-map" data-toggle="tab">Business</a>
-                </li>
-            </ul>
-        </div> -->
-        <!-- <div class="map-container clearfix">
-            <div class="tab-content ">
-                <div class="tab-pane active" id="residential-map">
-                    <div class="residential-providers">
-                        <h3>Residential Map</h3>
-                    </div>
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Tableau Public DashBoard
+                    </button>
+                  </h5>
                 </div>
-                <div class="tab-pane" id="business-map">
-                    <div class="business-providers">
-                        <h3>Business Map</h3>
+
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <div>
+                        <a href="https://public.tableau.com/profile/ding.luo#!/vizhome/FCCDataViz-StateLevel/MainDashboard-State?publish=yes" target="_blank" >FCC Data Viz - State Level</a>
                     </div>
+                    <div>
+                        <a href="https://public.tableau.com/profile/ding.luo#!/vizhome/FCCDataViz-CountyLevel/MainDashboard-County?publish=yes" target="_blank">FCC Data Viz - County Level</a>
+                    </div>
+                    <div>
+                        <a href="https://public.tableau.com/profile/ding.luo#!/vizhome/FCCDataViz-Census/CensusDashboard?publish=yes" target="_blank">FCC Data Viz - Census</a>
+                    </div>
+                  </div>
                 </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      FCC 477 Datasets
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body">
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Census Datasets
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body">
+                    All the Census datasets involved in this Capstone are provided by the US Census Bureau (https://www.census.gov) and it provides a website for people to retrieve various Census data files from - the American FactFinder (https://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml). We adopted several tables in different datasets and programs as measurements. Specifically, at both state and county levels, Educational Attainment (S1501), Median Income in the Past 12 Months in 2016 Inflation-Adjusted Dollars (S1903), Total Population (B01003), Poverty Rate (S1701) are tables belonging to the American Community Survey program's 2016 ACS 5-year estimates dataset. Also, the Land Area column recorded in 2010 is inside the Population, Housing Units, Area, and Density: 2010 table, which is from the Decennial Census program's 2010 Census Summary File dataset.
+                  </div>
+                </div>
+              </div>
             </div>
         </div>
-
-        <div class="speed-container container clearfix">
-            <h2>Provider Speed</h2>
-            <ul class="nav nav-tabs">
-                <li class="active">
-                    <a  href="#residential-speed" data-toggle="tab">Residential</a>
-                </li>
-                <li>
-                    <a href="#business-speed" data-toggle="tab">Business</a>
-                </li>
-            </ul>
-
-            <div class="tab-content ">
-                <div class="tab-pane active" id="residential-speed">
-                    <div class="residential-providers">
-                        <h3>Residential Providers Speed</h3>
-                    </div>
-                </div>
-                <div class="tab-pane" id="business-speed">
-                    <div class="business-providers">
-                        <h3>Business Providers Speed</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="city-speed-container container">
-            <h2>Download Speed in %CITY%</h2>
-        </div> -->
+        
     </div>
 
     <div class="footer" style="position: fixed;">
@@ -158,7 +142,7 @@
     <!-- (Optional) Latest compiled and minified JavaScript translation files -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/i18n/defaults-*.min.js"></script>
     <!-- bootstrap -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
     <script src="https://d3js.org/topojson.v2.min.js"></script>
     <script src="app.js"></script>
