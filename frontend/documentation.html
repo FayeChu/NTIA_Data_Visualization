@@ -57,86 +57,81 @@
                 <li class="nav-item active my-2 my-lg-0">
                     <a class="nav-link" href="#">Documentation</a>
                 </li>
-              <!-- <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Dropdown
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </li> -->
-              <!-- <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-              </li> -->
             </ul>
-            <!-- <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form> -->
           </div>
         </nav>
     </div>
     <div class="vis-container">
         <div class="provider-container clearfix">
             <h2>Documentation</h2>
-        </div>
-        <!-- <div class="container">
-            <h2>Provider Map</h2>
-            <ul class="nav nav-tabs">
-                <li class="active">
-                    <a  href="#residential-map" data-toggle="tab">Residential</a>
-                </li>
-                <li>
-                    <a href="#business-map" data-toggle="tab">Business</a>
-                </li>
-            </ul>
-        </div> -->
-        <!-- <div class="map-container clearfix">
-            <div class="tab-content ">
-                <div class="tab-pane active" id="residential-map">
-                    <div class="residential-providers">
-                        <h3>Residential Map</h3>
-                    </div>
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Broadband Data ETL and Manipulation with Python
+                    </button>
+                  </h5>
                 </div>
-                <div class="tab-pane" id="business-map">
-                    <div class="business-providers">
-                        <h3>Business Map</h3>
+
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <div>
+                        <h4>Step 01: Prerequisite</h4>
+                        <p>Before proceeding to further steps, you need to have Python 3.6.5+ installed on your computer. Whether you are using</p>
                     </div>
+                    <div>
+                        <h4>Step 02: Data Preparation</h4>
+                        <p>Download
+                        File naming
+                        etc.</p>
+                    </div>
+                    <div>
+                        <h4>Step 03: Data ETL and Manipulation</h4>
+                        <p>usage
+                        key code snippets and explanations. refer to the</p>
+                    </div>
+                    <div>
+                        <h4>Step 04: Result</h4>
+                        <p>outputs ready for next step</p>
+                    </div>
+                    <div>
+                        <h4>Step 05: Contact</h4>
+                        <p>issue/bug, help</p>
+                    </div>
+                  </div>
                 </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Data Analytics and Visualizations in Dashboards with Tableau
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body">
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Web Portal Integration with JavaScript
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body">
+                    
+                  </div>
+                </div>
+              </div>
             </div>
         </div>
-
-        <div class="speed-container container clearfix">
-            <h2>Provider Speed</h2>
-            <ul class="nav nav-tabs">
-                <li class="active">
-                    <a  href="#residential-speed" data-toggle="tab">Residential</a>
-                </li>
-                <li>
-                    <a href="#business-speed" data-toggle="tab">Business</a>
-                </li>
-            </ul>
-
-            <div class="tab-content ">
-                <div class="tab-pane active" id="residential-speed">
-                    <div class="residential-providers">
-                        <h3>Residential Providers Speed</h3>
-                    </div>
-                </div>
-                <div class="tab-pane" id="business-speed">
-                    <div class="business-providers">
-                        <h3>Business Providers Speed</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="city-speed-container container">
-            <h2>Download Speed in %CITY%</h2>
-        </div> -->
     </div>
 
     <div class="footer" style="position: fixed;">
@@ -158,7 +153,7 @@
     <!-- (Optional) Latest compiled and minified JavaScript translation files -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/i18n/defaults-*.min.js"></script>
     <!-- bootstrap -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
     <script src="https://d3js.org/topojson.v2.min.js"></script>
     <script src="app.js"></script>
