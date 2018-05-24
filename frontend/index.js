@@ -1,4 +1,5 @@
-// var urls = new Array ("https://www.youtube.com/embed/XOswcO-5FVQ?rel=0");
+// var urls = new Array ("https://www.youtube.com/embed/XOswcO-5FVQ?rel=0",
+// 	"https://www.youtube.com/embed/7qkpyzumg-c");
 // var currentTab = '';
 
 // $(document).ready(function() {

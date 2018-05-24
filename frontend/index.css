@@ -12,7 +12,7 @@ h1 {
 }
 
 body {
-    width: 1220px;
+    width: 1300px;
     margin: 0 auto;
     padding: 0 10px 0 10px;
     clear: both;
@@ -20,6 +20,14 @@ body {
 
 img {
     background-color: #ccc;
+}
+
+iframe {
+    margin-bottom: 10px;
+}
+
+h4 {
+    margin-bottom: 0;
 }
 
 .logo {
@@ -117,6 +125,47 @@ img {
 
 .tab-content {
     margin-bottom: 100px;
+}
+
+.tab-pane {
+
+    padding: 10px;
+}
+
+.content {
+    margin-top: 5px;
+    font-size: 20px;
+    color: rgba(0,0,0,.5);
+
+}
+
+.member {    
+    font-size: 16px;
+    color: rgba(0,0,0,.5);
+}
+
+.ntia {
+    font-size: 16px;
+    color: rgba(0,0,0,.5);
+
+}
+
+.ntia img {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    margin-right: 5px;
+
+}
+
+.deliverable {
+   margin-bottom: 8px;
+
+}
+
+.deliverable a {
+    font-size: 20px;
+    color: rgba(0,0,0,.5);
 }
 
 /*.tableauPlaceholder_County {
