@@ -22,7 +22,7 @@
             </a>
         </div>
         <div class="title">
-            <h1>Data Sources</h1>
+            <h1>Broadband Data for Communities and States</h1>
         </div>
         
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -33,7 +33,23 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Broadband Data for Communities and States
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="state.html">State-Level Visualization</a>
+                      <a class="dropdown-item" href="county.html">County-Level Visualization</a>
+                      <a class="dropdown-item" href="census.html">Census Visualization</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="infographic.html">State Infographics</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="source.html">Data Sources</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="documentation.html">Documentation</a>
+                    </div>
+                </li>
+                <!-- <li class="nav-item">
                     <a class="nav-link" href="state.html">State-Level Visualization</a>
                 </li>
                 <li class="nav-item">
@@ -44,19 +60,19 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="infographic.html">State Infographics<span class="sr-only">(current)</span></a>
-                </li>
+                </li> -->
                 <li class="nav-item">
                   <a class="nav-link" href="digital.html">Digital Nation</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="other.html">Connectivity Assessment</a>
                 </li>
-                <li class="nav-item active">
+                <!-- <li class="nav-item active">
                     <a class="nav-link" href="source.html">Data Source</a>
                 </li>
                 <li class="nav-item my-2 my-lg-0">
                     <a class="nav-link" href="documentation.html">Documentation</a>
-                </li>
+                </li> -->
               
             </ul>
             
@@ -66,7 +82,7 @@
     <div class="vis-container">
         <div class="provider-container clearfix">
             <h2>Data Sources</h2>
-            <div class="accordion" id="accordionExample">
+            <div class="accordion" id="accordionSource">
               <div class="card">
                 <div class="card-header" id="headingOne">
                   <h5 class="mb-0">
@@ -114,7 +130,7 @@
                 </div>
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                   <div class="card-body">
-                    All the Census datasets involved in this Capstone are provided by the US Census Bureau (https://www.census.gov) and it provides a website for people to retrieve various Census data files from - the American FactFinder (https://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml). We adopted several tables in different datasets and programs as measurements. Specifically, at both state and county levels, Educational Attainment (S1501), Median Income in the Past 12 Months in 2016 Inflation-Adjusted Dollars (S1903), Total Population (B01003), Poverty Rate (S1701) are tables belonging to the American Community Survey program's 2016 ACS 5-year estimates dataset. Also, the Land Area column recorded in 2010 is inside the Population, Housing Units, Area, and Density: 2010 table, which is from the Decennial Census program's 2010 Census Summary File dataset.
+                    All the Census datasets involved in this Capstone are provided by the US Census Bureau <a href="https://www.census.gov" target="_blank">(https://www.census.gov)</a> and it provides a website for people to retrieve various Census data files from - the American FactFinder (https://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml). We adopted several tables in different datasets and programs as measurements. Specifically, at both state and county levels, Educational Attainment (S1501), Median Income in the Past 12 Months in 2016 Inflation-Adjusted Dollars (S1903), Total Population (B01003), Poverty Rate (S1701) are tables belonging to the American Community Survey program's 2016 ACS 5-year estimates dataset. Also, the Land Area column recorded in 2010 is inside the Population, Housing Units, Area, and Density: 2010 table, which is from the Decennial Census program's 2010 Census Summary File dataset.
                   </div>
                 </div>
               </div>
@@ -122,8 +138,11 @@
         </div>
         
     </div>
+    <div class="reference">
+                            
+    </div>
 
-    <div class="footer" style="position: fixed;">
+    <div class="footer">
         <strong>Contacts</strong>
         <p>University of Washington Capstone Team</p>
         <p>msimcapstone18@gmail.com</p>
