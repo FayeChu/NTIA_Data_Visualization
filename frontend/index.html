@@ -22,7 +22,7 @@
             </a>
         </div>
         <div class="title">
-            <h1>Improving Broadband Data Accessibility for Local Decision-Makers</h1>
+            <h1>MSIM Capstone with NTIA</h1>
         </div>       
         
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -33,7 +33,23 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Broadband Data for Communities and States
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="state.html">State-Level Visualization</a>
+                      <a class="dropdown-item" href="county.html">County-Level Visualization</a>
+                      <a class="dropdown-item" href="census.html">Census Visualization</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="infographic.html">State Infographics</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="source.html">Data Sources</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="documentation.html">Documentation</a>
+                    </div>
+                </li>
+                <!-- <li class="nav-item">
                     <a class="nav-link" href="state.html">State-Level Visualization</a>
                 </li>
                 <li class="nav-item">
@@ -44,19 +60,19 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="infographic.html">State Infographics<span class="sr-only">(current)</span></a>
-                </li>
+                </li> -->
                 <li class="nav-item">
                   <a class="nav-link" href="digital.html">Digital Nation</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="other.html">Connectivity Assessment</a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link" href="source.html">Data Source</a>
                 </li>
                 <li class="nav-item my-2 my-lg-0">
                     <a class="nav-link" href="documentation.html">Documentation</a>
-                </li>
+                </li> -->
             </ul>
           </div>
         </nav>
@@ -83,7 +99,7 @@
               <div class="card">
                 <div class="card-header" id="headingTwo">
                   <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                       Background
                     </button>
                   </h5>
@@ -98,7 +114,7 @@
               <div class="card">
                 <div class="card-header" id="headingThree">
                   <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                       Research Partners
                     </button>
                   </h5>
@@ -111,7 +127,10 @@
                 </div>
               </div>
             </div>
-            <h3>Project Teams</h3>
+            <div class="team-header">
+              <h3>Capstone Teams</h3>
+            </div>
+            
             <nav>
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
                     <a class="nav-item nav-link active" id="broadband-data-tab" data-toggle="tab" href="#broadband-data" role="tab" aria-controls="broadband-data" aria-selected="true">Broadband Data for Communities and States</a>
@@ -121,12 +140,27 @@
             </nav>
             <div class="tab-content" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="broadband-data" role="tabpanel" aria-labelledby="broadband-data">
-                    <h4>Challenge</h4>
+                    <!-- <h4>Challenge</h4>
                     <div class="content">
                         <p>Create data analyses and visualizations to help local and state leaders better understand broadband availability and subscription in their community, county, or state.<p>
+                    </div> -->
+                    <div class="accordion" id="accordionExample">
+                      <div class="card">
+                        <div class="card-header" id="headingOne">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#challengeOne" aria-expanded="true" aria-controls="collapseOne">
+                              Challenge
+                            </button>
+                          </h5>
+                        </div>
+
+                        <div id="challengeOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Create data analyses and visualizations to help local and state leaders better understand broadband availability and subscription in their community, county, or state.
+                            </div>
+                        </div>
+                      </div>
                     </div>
-                    <h4>Introduction</h4>
-                    <iframe width="600" height="360" src="https://www.youtube.com/embed/XOswcO-5FVQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     <div class="accordion" id="accordionExample">
                       <div class="card">
                         <div class="card-header" id="headingOne">
@@ -155,11 +189,55 @@
                         </div>
                       </div>
                     </div>
-                    <h4>Team Members</h4>
+                    <!-- <h4>Introduction</h4> -->
+                    <iframe width="600" height="360" src="https://www.youtube.com/embed/XOswcO-5FVQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <div class="accordion" id="accordionName">
+                      <div class="card">
+                        <div class="card-header" id="headingOne">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#teamOne" aria-expanded="true" aria-controls="collapseOne">
+                              Team Members
+                            </button>
+                          </h5>
+                        </div>
+
+                        <div id="teamOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Ding Luo, Wang Chen, Wei Wei, Wuyi Zhang, Xiaofei Chu
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion" id="accordionName">
+                      <div class="card">
+                        <div class="card-header" id="headingOne">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#sponsorOne" aria-expanded="true" aria-controls="collapseOne">
+                              Sponsors
+                            </button>
+                          </h5>
+                        </div>
+
+                        <div id="sponsorOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="ntia">
+                                    <a href="https://www.ntia.doc.gov/" target="_blank"><img src="https://www.ntia.doc.gov/files/ntia/ntia-logo-no-halo-sm.png" alt="ntia-logo"></a>
+                                    Karen Archer Perry
+                                </div>
+                                <div class="ntia">
+                                    <a href="https://ocio.wa.gov/" target="_blank"><img src="./img/ocio.jpg" title="OCIO" alt="OCIO"></a>
+                                    Will Saunders
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <!-- <h4>Team Members</h4>
                     <div class="member">
                         <p>Ding Luo, Wang Chen, Wei Wei, Wuyi Zhang, Xiaofei Chu<p>
-                    </div>
-                    <h4>Sponsors</h4>
+                    </div> -->
+
+                    <!-- <h4>Sponsors</h4>
                     <div>
                         <div class="ntia">
                             <a href="https://www.ntia.doc.gov/" target="_blank"><img src="https://www.ntia.doc.gov/files/ntia/ntia-logo-no-halo-sm.png" alt="ntia-logo"></a>
@@ -169,16 +247,31 @@
                             <a href="https://ocio.wa.gov/" target="_blank"><img src="./img/ocio.jpg" title="OCIO" alt="OCIO"></a>
                             Will Saunders
                         </div>
-                    </div>
+                    </div> -->
 
                 </div>
                 <div class="tab-pane fade" id="digital-nation" role="tabpanel" aria-labelledby="digital-nation">
-                    <h4>Challenge</h4>
+                    <!-- <h4>Challenge</h4>
                     <div class="content">
                         <p>Mine the tremendous Digital Nation Computer and Internet Survey dataset to tell new stories, inform state and county policies, and model county-level usage, supporting local and state leaders who want to improve broadband.<p>
+                    </div> -->
+                    <div class="accordion" id="accordionExample">
+                      <div class="card">
+                        <div class="card-header" id="headingOne">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#challengeTwo" aria-expanded="true" aria-controls="collapseOne">
+                              Challenge
+                            </button>
+                          </h5>
+                        </div>
+
+                        <div id="challengeTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Mine the tremendous Digital Nation Computer and Internet Survey dataset to tell new stories, inform state and county policies, and model county-level usage, supporting local and state leaders who want to improve broadband.
+                            </div>
+                        </div>
+                      </div>
                     </div>
-                    <h4>Introduction</h4>
-                    <iframe width="600" height="360" src="https://www.youtube.com/embed/7qkpyzumg-c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     <div class="accordion" id="accordionExample">
                       <div class="card">
                         <div class="card-header" id="headingOne">
@@ -204,7 +297,50 @@
                         </div>
                       </div>
                     </div>
-                    <h4>Team Members</h4>
+                    <!-- <h4>Introduction</h4> -->
+                    <iframe width="600" height="360" src="https://www.youtube.com/embed/7qkpyzumg-c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <div class="accordion" id="accordionName">
+                      <div class="card">
+                        <div class="card-header" id="headingOne">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#teamTwo" aria-expanded="true" aria-controls="collapseOne">
+                              Team Members
+                            </button>
+                          </h5>
+                        </div>
+
+                        <div id="teamTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Janani Kumar, Nan Xiao, Shiyi Luo
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion" id="accordionName">
+                      <div class="card">
+                        <div class="card-header" id="headingOne">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#sponsorTwo" aria-expanded="true" aria-controls="collapseOne">
+                              Sponsors
+                            </button>
+                          </h5>
+                        </div>
+
+                        <div id="sponsorTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="ntia">
+                                    <a href="https://www.ntia.doc.gov/" target="_blank"><img src="https://www.ntia.doc.gov/files/ntia/ntia-logo-no-halo-sm.png" alt="ntia-logo"></a>
+                                    Karen Archer Perry
+                                </div>
+                                <div class="ntia">
+                                    <a href="https://ocio.wa.gov/" target="_blank"><img src="./img/ocio.jpg" title="OCIO" alt="OCIO"></a>
+                                    Will Saunders
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <!-- <h4>Team Members</h4>
                     <div class="member">
                         <p>Janani Kumar, Nan Xiao, Shiyi Luo<p>
                     </div>
@@ -218,15 +354,31 @@
                             <a href="https://ocio.wa.gov/" target="_blank"><img src="./img/ocio.jpg" title="OCIO" alt="OCIO"></a>
                             Will Saunders
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="tab-pane fade" id="connectivity-assessment" role="tabpanel" aria-labelledby="connectivity-assessment">
-                    <h4>Challenge</h4>
+                    <!-- <h4>Challenge</h4>
                     <div class="content">
                         <p>Conduct usability evaluation of the BroadbandUSA Connectivity Assessment Tool, develop and prototype recommendations for improvement.<p>
+                    </div> -->
+                    <!-- <h4>Introduction</h4> -->
+                    <div class="accordion" id="accordionExample">
+                      <div class="card">
+                        <div class="card-header" id="headingOne">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#challengeThree" aria-expanded="true" aria-controls="collapseOne">
+                              Challenge
+                            </button>
+                          </h5>
+                        </div>
+
+                        <div id="challengeThree" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Conduct usability evaluation of the BroadbandUSA Connectivity Assessment Tool, develop and prototype recommendations for improvement.
+                            </div>
+                        </div>
+                      </div>
                     </div>
-                    <h4>Introduction</h4>
-                    <iframe width="600" height="360" src="https://www.youtube.com/embed/_PCpBElY9a0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     <div class="accordion" id="accordionExample">
                       <div class="card">
                         <div class="card-header" id="headingOne">
@@ -252,7 +404,49 @@
                         </div>
                       </div>
                     </div>
-                    <h4>Team Members</h4>
+                    <iframe width="600" height="360" src="https://www.youtube.com/embed/_PCpBElY9a0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <div class="accordion" id="accordionName">
+                      <div class="card">
+                        <div class="card-header" id="headingOne">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#teamThree" aria-expanded="true" aria-controls="collapseOne">
+                              Team Members
+                            </button>
+                          </h5>
+                        </div>
+
+                        <div id="teamThree" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Nina Showell, Ashley Lindsey
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion" id="accordionName">
+                      <div class="card">
+                        <div class="card-header" id="headingOne">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#sponsorThree" aria-expanded="true" aria-controls="collapseOne">
+                              Sponsors
+                            </button>
+                          </h5>
+                        </div>
+
+                        <div id="sponsorThree" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="ntia">
+                                    <a href="https://www.ntia.doc.gov/" target="_blank"><img src="https://www.ntia.doc.gov/files/ntia/ntia-logo-no-halo-sm.png" alt="ntia-logo"></a>
+                                    Karen Archer Perry
+                                </div>
+                                <div class="ntia">
+                                    <a href="https://ocio.wa.gov/" target="_blank"><img src="./img/ocio.jpg" title="OCIO" alt="OCIO"></a>
+                                    Will Saunders
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <!-- <h4>Team Members</h4>
                     <div class="member">
                         <p>Nina Showell, Ashley Lindsey<p>
                     </div>
@@ -266,7 +460,7 @@
                             <a href="https://ocio.wa.gov/" target="_blank"><img src="./img/ocio.jpg" title="OCIO" alt="OCIO"></a>
                             Will Saunders
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
