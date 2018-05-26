@@ -25,7 +25,7 @@ let fillColor = d3.scaleOrdinal()
                 .domain(['business', 'consumer', 'mobile'])
                 .range(['#257FE7', '#F3AD21', '#F13521']);
 
-d3.csv("../data/whole_nation_state.csv", function(error, data){
+d3.csv("../web-source-data-factory/whole_nation_state.csv", function(error, data){
     data.map(function(d){
         d.twentyfiveWealth = +d.twentyfive_three/195574;
         d.twentyfiveAccess = +d.bc_twentyfive/195574;
