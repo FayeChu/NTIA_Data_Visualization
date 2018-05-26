@@ -225,10 +225,23 @@ h4 {
 }
 
 #accordionName .card {
-    width: 100%;
+    width: 420px;
 
 }
 
+.video {
+    display: inline-block;
+    float: left;
+    padding-top: 20px; 
+    margin-right: 10px;
+}
+
+.desc {
+    width: 420px;
+    padding: 50px;
+    padding-top: 20px; 
+    display: inline-block;
+}
 /*#accordionSource, #accordionDocumentation {
     margin-bottom: 20px;
 
