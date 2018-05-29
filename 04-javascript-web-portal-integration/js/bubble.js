@@ -394,7 +394,7 @@ function bubbleChart() {
   }
   
   function drawbubbles() {
-    d3.csv('./web-source-data-factory/whole_nation_state.csv', display);
+    d3.csv('./web-portal-source-data-factory/whole_nation_state.csv', display);
     setupButtons();
   }
   

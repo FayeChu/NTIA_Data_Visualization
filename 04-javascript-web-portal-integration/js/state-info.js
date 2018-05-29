@@ -15,7 +15,7 @@ $(function(){
         $('#sl').append('<option value="' + STATELIST[i] + '">' + STATELIST[i] + '</option>')
     }
 
-    d3.csv("../web-source-data-factory/State_Level_Census.csv",function(error, data){
+    d3.csv("../web-portal-source-data-factory/State_Level_Census.csv",function(error, data){
         populateInfo(data,"WA")
         
     })
@@ -39,14 +39,14 @@ $(function(){
 
     function updateState() {
         let currStateAbbr = $('#sl').val();
-        d3.csv("../web-source-data-factory/State_Level_Census.csv",function(error, data){
+        d3.csv("../web-portal-source-data-factory/State_Level_Census.csv",function(error, data){
             populateInfo(data,currStateAbbr)
             currState = data.filter(d => d.State == currStateAbbr)[0]
             currStateFips = currState.StateFips;
             stateName = currState.Name;
             totalBlocksNum = currState.CensusBlocksNum;
             $('.info_head .head-content').html(stateName);
-            d3.csv("../web-source-data-factory/whole_nation_state.csv", function(error, data){
+            d3.csv("../web-portal-source-data-factory/whole_nation_state.csv", function(error, data){
                 data.map(function(d){
                     d.twentyfiveWealth = +d.twentyfive_three/totalBlocksNum;
                     d.twentyfiveAccess = +d.bc_twentyfive/totalBlocksNum;
@@ -75,7 +75,7 @@ $(function(){
         })
         
 
-        d3.csv("../web-source-data-factory/residential_fixed_internet_access_service_connections.csv",function(error, data){
+        d3.csv("../web-portal-source-data-factory/residential_fixed_internet_access_service_connections.csv",function(error, data){
         
             for(let name of disIdList) {
                 drawRangeBars(currStateAbbr, name, data)
