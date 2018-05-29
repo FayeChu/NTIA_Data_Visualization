@@ -20,7 +20,7 @@ let yScale1 = d3.scaleLinear()
                 .range([0,visHeight1])
 
 
-d3.csv("../data/residential_fixed_internet_access_service_connections.csv",function(error, data){
+d3.csv("../web-source-data-factory/residential_fixed_internet_access_service_connections.csv",function(error, data){
 
     for(let name of disIdList) {
         drawRangeBars("WA", name, data)

@@ -22,7 +22,7 @@
 //         {"Name":"Stewed Prunes","Count":1268}]
 // };
 
-d3.csv("../data/whole_nation_state.csv",function(error, data){
+d3.csv("../web-source-data-factory/whole_nation_state.csv",function(error, data){
     drawBubbles(data,"53")
 })
 
