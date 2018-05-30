@@ -10,7 +10,7 @@ let width = 212.5,
     visWidth = width - connectivityBarMargin.left - connectivityBarMargin.right,
     visHeight = height - connectivityBarMargin.top - connectivityBarMargin.bottom;
 
-idList = ["twentyfiveWealth", "hundredWealth","twentyfiveAccess", "hundredAccess"];
+idList = ["tenAccess", "twentyfiveAccess","hundredAccess", "twentyfiveWealth"];
 
 
 
@@ -25,8 +25,9 @@ let fillColor = d3.scaleOrdinal()
                 .domain(['business', 'consumer', 'mobile'])
                 .range(['#257FE7', '#F3AD21', '#F13521']);
 
-d3.csv("../web-portal-source-data-factory/whole_nation_state.csv", function(error, data){
+d3.csv("../web-portal-source-data-factory/whole_nation_statelevel.csv", function(error, data){
     data.map(function(d){
+        d.tenAccess = +d.bc_ten/195574;
         d.twentyfiveWealth = +d.twentyfive_three/195574;
         d.twentyfiveAccess = +d.bc_twentyfive/195574;
         d.hundredWealth = +d.hundred_fifty/195574;
@@ -55,6 +56,7 @@ function drawBars(state, name, data) {
     let xMax = d3.max(data, function(d){ return d[name]})
     data = data.filter((d) => d.statecode == state)
     data.sort(function(a,b){return b[name]-a[name]})
+    data = data.splice(0,10)
     
     yScale.domain(data.map(function(d){
         return d.type+"-"+d.tech;

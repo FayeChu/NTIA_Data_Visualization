@@ -43,7 +43,7 @@ button {
     padding: 15px;
 }
 
-.info_head {
+.head {
     width: 850px;
     height: 100px;
     background-image: url('../img/header.jpg');
@@ -120,14 +120,16 @@ button {
 
 
 
-.info_title {
+.title {
     width: 92.5px;
     height: 60px;
     background-color: grey;
     float: left;
     word-wrap: break-word;
     padding: 5px;
+    padding-left: 8px;
     color: white;
+    font-size: 14px;
 }
 
 .number {
@@ -188,6 +190,72 @@ button {
     height: 250px;
     background-color: #ddd;
     float: left;
+}
+
+.circle-section {
+    width: 70px;
+    height: 70px;
+    background-color: #ddd;
+    float: left;
+    margin-left: 10px;
+}
+
+.circle-title {
+    color: black;
+    font-size: 10px;
+    height: 15px;
+}
+
+.circle-title:first-letter {
+    text-transform: capitalize;
+}
+
+.circle-icon {
+    width: 425px;
+    height: 70px;
+    background-color: #ddd;
+    float:left;
+    margin-top: 10px;
+}
+
+.icon-title {
+    width: 165px;
+    height: 70px;
+    background-color: #eee;
+    float: left;
+    margin-left: 10px;
+}
+
+.circle-type {
+    width: 55px;
+    height: 55px;
+    color: black;
+    float: left;
+    border-radius: 50%;
+    position: relative;
+}
+
+.mobile {
+    background-color: #F13521;
+}
+
+.consumer {
+    background-color: #F3AD21;
+}
+
+.business {
+    background-color: #257FE7;
+}
+
+.circle-type-cover {
+    width: 70px;
+    /* height: 10px; */
+    /* color: white; */
+    background-color: #ddd;
+    position: absolute;
+    top: 0px;
+    transition: 0.5s;
+    opacity: 0.8;
 }
 
 .foot {

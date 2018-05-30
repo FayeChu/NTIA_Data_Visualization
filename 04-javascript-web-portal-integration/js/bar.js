@@ -10,7 +10,8 @@ let width1 = 425,
     visWidth1 = width1 - tractBarMargin.left - tractBarMargin.right,
     visHeight1 = height1 - tractBarMargin.top - tractBarMargin.bottom;
 
-disIdList = ["count_200kbps", "count_1mbps"];
+disIdList = ["count_1mbps"];
+percentageBarList = ["bc_ten","bc_twentyfive","bc_hundred"];
 
 let xScale1 = d3.scaleBand()
                 .range([0,visWidth1])
@@ -113,8 +114,8 @@ function chartTitle(name) {
         return "Connectivity Wealth (25/3)"
     } else if(name == "twentyfiveAccess") {
         return "Connectivity Access (25/3)"
-    } else if(name == "hundredWealth") {
-        return "Connectivity Wealth (100/50)"
+    } else if(name == "tenAccess") {
+        return "Connectivity Access (10/1)"
     } else {
         return "Connectivity Access (100/50)"
     }
